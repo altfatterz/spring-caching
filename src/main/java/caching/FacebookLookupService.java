@@ -21,7 +21,7 @@ public class FacebookLookupService {
 
     @Cacheable("pages")
     public Page findPage(String page) {
-        LOGGER.info("calling facebookLookupService with {}", page);
+        LOGGER.info("calling findPage with {}", page);
         return restTemplate.getForObject("http://graph.facebook.com/" + page, Page.class);
     }
 
