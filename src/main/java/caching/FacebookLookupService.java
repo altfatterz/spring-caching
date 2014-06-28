@@ -10,9 +10,9 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class FacebookLookupService {
 
-    RestTemplate restTemplate;
-
     private static final Logger LOGGER = LoggerFactory.getLogger(FacebookLookupService.class);
+
+    private RestTemplate restTemplate;
 
     @Autowired
     public FacebookLookupService(RestTemplate restTemplate) {
